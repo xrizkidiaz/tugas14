@@ -1,0 +1,106 @@
+<html>
+<title> W3.CSS </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<div class="w3-container w3-black">
+ <center>
+ <img src="lxj.jpeg" alt="me"width=800 height=400>
+ </center>
+</div>
+
+<div class="w3-bar">
+  <button class="w3-bar-item w3-button tablink" onclick="rapper(event, 'HOME')"> HOME </button>
+  <button class="w3-bar-item w3-button tablink" onclick="rapper(event, 'My Profile')"> MY PROFILE </button>
+  <button class="w3-bar-item w3-button tablink" onclick="rapper(event, 'XXXTENTATION')"> XXXTENTATION </button>
+  <button class="w3-bar-item w3-button tablink" onclick="rapper(event, 'JUICE WRLD')"> JUICE WRDL </button>
+  <button class="w3-bar-item w3-button tablink" onclick="rapper(event, 'LIL PEEP')"> LIL PEEP </button>
+  <button class="w3-bar-item w3-button tablink" onclick="rapper(event, 'TRAVIS SCOTT')"> TRAVIS SCOTT </button> 
+  <button class="w3-bar-item w3-button tablink" onclick="rapper(event, 'EMINEM')"> EMINEM </button>
+</div>
+
+<div class="w3-container w3-black">
+<div id="HOME" class="w3-container rapper">
+  <center>
+  <h1> HALLO MY NAME IS DIAZ </h1>
+  <p> KLICK TOMBOL DIATAS UNTUK MENGETAHUI RAPPER MUSIK KESUKAAN SAYA </p>
+  </center>
+</div>
+
+<div id="My Profile" class="w3-container rapper w3-animate-opacity" style="display:none">
+  <center>
+  <h1> PROFILE </h1>
+  <img src="diaz.jpeg" alt="me"width=295 height=400 >
+  <p> NAMA = SHEVA RIZKY DIAZ ISLAMI </p>
+  <p> NIM = 10121236 </p>
+  <p> KELAS = INFORMATIKA-6 </p>
+  </center>
+</div>
+
+<div id="XXXTENTATION" class="w3-container rapper w3-animate-left" style="display:none">
+  <center> 
+  <h1> XXXTENTATION </h1>
+  <img src="jahseh.jpeg" alt="me"width=295 height=400>
+  <p> Jahseh Dwayne Ricardo Onfroy (23 Januari 1998 – 18 Juni 2018) atau yang dikenal juga dengan nama XXXTentacion,
+     adalah seorang rapper, penyanyi, penulis lagu, dan musisi berkebangsaan Amerika Serikat.
+     Meskipun ia menjadi sosok yang kontroversial karena masalah hukum yang dipublikasikan secara luas, 
+	 XXXTentacion mendapatkan berbagai penggemar, diantara penggemar muda selama kariernya yang singkat.
+	 Dia sering disebut oleh para kritikus dan penggemar untuk fleksibilitas musiknya,
+	 dengan musiknya terutama kala menjelajahi trap, emo, lo-fi serta rock.</p>
+  </center>
+</div>
+
+<div id="JUICE WRLD" class="w3-container rapper w3-animate-right" style="display:none">
+  <center>
+  <h1> JUICE WRDL </h1>
+  <img src="juice.jpeg" alt="me"width=295 height=400>
+  <p> Jarad Anthony Higgins (2 Desember 1998 – 8 Desember 2019), dikenal secara profesional sebagai Juice WRLD (diucapkan "Juice World"),
+     adalah seorang rapper, penyanyi, dan penulis lagu asal Amerika Serikat. Lahir di Chicago, Illinois, 
+     ia terkenal karena lagu hit-nya "All Girls Are the Same" dan "Lucid Dreams"
+	 yang membantunya mendapatkan kontrak rekaman dengan Grade A Productions dan Interscope Records.</p>
+  </center>
+</div>
+
+<div id="LIL PEEP" class="w3-container rapper w3-animate-top" style="display:none">
+  <center>
+  <h1> LIL PEEP </h1>
+  <img src="peep.jpeg" alt="me"width=295 height=400>
+  <p> Gustav Elijah hr, yang dikenal secara profesional sebagai Lil Peep,
+     adalah seorang rapper, penyanyi, dan penulis lagu Swedia-Amerika.
+     Dia adalah anggota dari kolektif rap emo GothBoiClique.</p>
+  </center>
+</div>
+
+<div id="TRAVIS SCOTT" class="w3-container rapper w3-animate-bottom" style="display:none">
+  <center>
+  <h1> TRAVIS SCOTT </h1>
+  <img src="travis.jpeg" alt="me"width=295 height=400>
+  <p> Jacques Bermon Webster II[4] (lahir 30 April 1991), dikenal secara profesional sebagai Travis Scott (sebelumnya diberi gaya sebagai Travi$ Scott),
+     adalah seorang rapper, penyanyi, penulis lagu, dan produser rekaman Amerika.
+     Nama panggungnya merupakan kombinasi dari nama pamannya dan nama depan salah satu inspirasinya, 
+     Kid Cudi (yang nama aslinya adalah Scott Mescudi).</p>
+  </center>
+</div>
+
+<div id="EMINEM" class="w3-container rapper w3-animate-zoom" style="display:none">
+  <center>
+  <h1> EMINEM </h1>
+  <img src="eminem.jpeg" alt="me"width=295 height=400>
+  <p> Marshall Bruce Mathers III (lahir 17 Oktober 1972), dikenal secara profesional sebagai Eminem (sering ditulis bergaya sebagai EMINƎM),
+     adalah seorang rapper, penulis lagu, produser rekaman, eksekutif rekaman.</p>
+  </center>
+</div>
+
+<script>
+function rapper(evt, rapper) {
+ var i;
+ var x = document.getElementsByClassName("rapper");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(rapper).style.display = "block"; 
+}
+
+</script>
+</body>
+</html>
